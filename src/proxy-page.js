@@ -4,7 +4,7 @@
 // Documentación técnica editorial en español hasta finalizar su traducción.
 export function proxyDetailPage({breadcrumbs,repository,language}) {
   const langNote = ''; // Both language editions are now complete.
-  const image=(src,alt,caption,cls='')=>`<figure class="proxy-shot ${cls}"><img src="/images/${src}" alt="${alt}" loading="lazy" decoding="async"><figcaption>${caption}</figcaption></figure>`;
+  const image=(src,alt,caption,cls='')=>`<figure class="proxy-shot ${cls}"><img src="https://krockzs.github.io/neebles-site/images/${src}" alt="${alt}" loading="lazy" decoding="async"><figcaption>${caption}</figcaption></figure>`;
   const feature=(title,body)=>`<article><h3>${title}</h3><p>${body}</p></article>`;
   const flow=(steps,label)=>`<div class="proxy-flow" role="group" aria-label="${label}">${steps.map((s,i)=>`${i?'<span class="proxy-flow-arrow" aria-hidden="true">↓</span>':''}<div><strong>${s[0]}</strong><small>${s[1]}</small></div>`).join('')}</div>`;
   return `${breadcrumbs([{label:'NEEBLES OS',href:'/proyectos/neebles-os'},{label:'Módulos',href:'/proyectos/neebles-os/modulos'},{label:'NEEBLES Proxy'}])}
@@ -19,7 +19,7 @@ export function proxyDetailPage({breadcrumbs,repository,language}) {
         <div class="proxy-tags"><span>Proxy Client</span><span>Proxy Server</span><span>Tailscale Exit Node</span><span>Boss Lifecycle</span><span>Secrets</span></div>
         <div class="proxy-links"><a class="proxy-primary" href="${repository.client}" target="_blank" rel="noopener noreferrer">Código Proxy Client ↗</a><a class="proxy-secondary" href="${repository.server}" target="_blank" rel="noopener noreferrer">Código Proxy Server ↗</a></div>
       </div>
-      <div class="proxy-hero-art"><img src="/images/proxy-large.webp" alt="Ilustración oficial de NEEBLES Proxy, con Neebles frente a la conectividad Tailscale" loading="eager" fetchpriority="high" decoding="async"></div>
+      <div class="proxy-hero-art"><img src="https://krockzs.github.io/neebles-site/images/proxy-large.webp" alt="Ilustración oficial de NEEBLES Proxy, con Neebles frente a la conectividad Tailscale" loading="eager" fetchpriority="high" decoding="async"></div>
     </section>
     ${langNote}
     <nav class="proxy-jump" aria-label="Índice NEEBLES Proxy"><a href="#proxy-idea">Qué resuelve</a><a href="#proxy-architecture">Arquitectura</a><a href="#proxy-client">Client</a><a href="#proxy-server">Server</a><a href="#proxy-exit">Requisito Exit Node</a><a href="#proxy-status">Estado real</a></nav>
