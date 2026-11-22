@@ -1,0 +1,16 @@
+node_modules/
+dist/
+.env
+.env.local
+
+# NEEBLES Site
+node_modules/
+dist/
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.log
